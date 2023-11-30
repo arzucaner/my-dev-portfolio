@@ -1,6 +1,6 @@
 import "./App.css";
 import Box from "@mui/material/Box";
-import EggIcon from "@mui/icons-material/Egg";
+import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                         }}
                     >
                         <Box>
-                            <EggIcon sx={{ fontSize: 50 }} />
+                            <FingerprintIcon sx={{ fontSize: 50 }} />
                         </Box>
                         <Box
                             gap={0.5}
@@ -83,9 +83,9 @@ function App() {
                                 "box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1)",
                         }}
                     >
-                        <Box>Work</Box>
-                        <Box>Info</Box>
-                        <Box>Blog</Box>
+                        <Box className="BoxItem">Work</Box>
+                        <Box className="BoxItem">Info</Box>
+                        <Box className="BoxItem">Blog</Box>
                     </Box>
 
 
