@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Box from "@mui/material/Box";
 import EggIcon from "@mui/icons-material/Egg";
