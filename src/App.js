@@ -105,46 +105,51 @@ function App() {
                                 alignItems: "center",
                             }}
                         >
-                            <Box>LinkedIn</Box>
                             <Box>
-                                <CallMadeIcon />
+                                <a href="https://www.linkedin.com/in/arzucaner/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                                <Box>
+                                    <CallMadeIcon />
+                                </Box>
                             </Box>
-                        </Box>
-                        <Box
-                            gap={1}
-                            sx={{
-                                display: "flex",
-                                flexDirection: "row",
-                                alignItems: "center",
-                            }}
-                        >
-                            <Box>Twitter</Box>
+
                             <Box>
-                                <CallMadeIcon />
+                                <a href="https://twitter.com/arzuguneycaner" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                <Box>
+                                    <CallMadeIcon />
+                                </Box>
                             </Box>
+                            <Box>
+                                <a href="https://www.youtube.com/channel/UCsK0v6RouRYb5I1Ny8flrOg" target="_blank" rel="noopener noreferrer">YouTube</a>
+
+                                <Box>
+                                    <CallMadeIcon />
+                                </Box>
+                            </Box>
+
                         </Box>
                     </Box>
+
                 </Box>
 
-            </Box>
-            <Box sx={{}}>main</Box>
-            <Box
-                sx={{
-                    p: 4,
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around",
-                }}
-            >
                 <Box
                     sx={{
+                        p: 4,
                         display: "flex",
-                        flexDirection: "column",
-                        alignItems: "flex-start",
+                        flexDirection: "row",
+                        justifyContent: "space-around",
                     }}
                 >
-                    <Box>footer left logo</Box>
-                    <Box>footer left information section</Box>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "flex-start",
+                        }}
+                    >
+                        <Box>footer left logo</Box>
+                        <Box>footer left information section</Box>
+                    </Box>
                 </Box>
 
                 <Box
