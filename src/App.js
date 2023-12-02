@@ -3,11 +3,14 @@ import Box from "@mui/material/Box";
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import Divider from "@mui/material/Divider";
+import NavbarToogle from "./components/NavbarToogle";
 
 function App() {
     return (
         <div className="App">
-            <Box sx={{ display: "flex", flexDirection: "column", color: "#f2f2f2" }}
+            <Box
+                gap={10}
+                sx={{ display: "flex", flexDirection: "column", color: "#f2f2f2" }}
             >
                 <Box
                     sx={{
@@ -32,7 +35,6 @@ function App() {
                                 flexDirection: "row",
                             }}
                         >
-
                             <Box>
                                 <FingerprintIcon sx={{ fontSize: 50 }} />
                             </Box>
@@ -144,6 +146,65 @@ function App() {
                     </Box>
 
                     <Box
+                        gap={5}
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                outlineOffset: "-1px",
+                                backgroundColor: "rgba(242, 242, 242, .04)",
+                                borderRadius: "24px",
+                                outline: "1px solid rgba(242, 242, 242, .05)",
+                                padding: "8px",
+                                boxShadow: "0 40px 80px rgba(0, 0, 0, .5)",
+                                width: "705px",
+                                height: "530px",
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    backgroundImage:
+                                        "radial-gradient(circle at 50% 0, rgba(255, 255, 255, .3), rgba(0, 0, 0, 0))",
+                                    width: "687px",
+                                    zIndex: "0",
+
+                                    top: "0%",
+                                    bottom: "0%",
+                                    left: "0%",
+                                    right: "0%",
+                                    height: "488px",
+                                    gridRowGap: "56px",
+
+                                    border: "1px solid #3d3d3d",
+                                    borderRadius: "16px",
+                                    flexDirection: "column",
+                                    paddingTop: "32px",
+                                    paddingLeft: "28px",
+                                    paddingRight: "28px",
+                                    textDecoration: "none",
+                                    transition: "border .4s cubic-bezier(.165, .84, .44, 1)",
+                                    position: "relative",
+                                    overflow: "hidden",
+                                }}
+                            >
+                                test
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Divider sx={{ bgcolor: "rgba(242, 242, 242, .1)" }} />
+
+                    <Box
                         sx={{
                             p: 4,
                             display: "flex",
@@ -158,26 +219,65 @@ function App() {
                                 alignItems: "flex-start",
                             }}
                         >
-                            <Box>footer left logo</Box>
-                            <Box>footer left information section</Box>
+                            <Box>
+                                <FingerprintIcon sx={{ fontSize: 70 }} />
+                            </Box>
+                            <Box>© 2023 All Rights Reserved.</Box>
+                        </Box>
+
+
+                        <Box
+                            gap={4}
+                            sx={{
+                                display: "flex",
+                                flexDirection: "row",
+                            }}
+                        >
+                            <Box gap={2}>
+                                <Box
+                                    sx={{
+                                        color: "#F2F2F2",
+                                        opacity: 0.5,
+                                        letterSpacing: "1.5px",
+                                        fontSize: "9px",
+                                        fontWeight: 500,
+                                        lineHeight: "13px",
+                                        mb: 2,
+                                    }}
+                                >
+                                    MAIN
+                                </Box>
+                                <Box>Work</Box>
+                                <Box>Info</Box>
+                            </Box>
+                            <Box>
+                                <Box
+                                    sx={{
+                                        color: "#F2F2F2",
+                                        opacity: 0.5,
+                                        letterSpacing: "1.5px",
+                                        fontSize: "9px",
+                                        fontWeight: 500,
+                                        lineHeight: "13px",
+                                        mb: 2,
+                                    }}
+                                >
+                                    CONTACT
+                                </Box>
+                                <Box gap={2}>
+                                    <Box>LinkedIn</Box>
+                                    <Box>Twitter</Box>
+                                    <Box>YouTube</Box>
+                                </Box>
+                            </Box>
                         </Box>
                     </Box>
-
-                    <Box
-                        gap={4}
-                        sx={{
-                            display: "flex",
-                            flexDirection: "row",
-                            justifyContent: 'space-around'
-                        }}
-                    >
-                        <Box> footer menu1</Box>
-                        <Box> footer menu2</Box>
-                    </Box>
                 </Box>
+            </Box>
+        </div>
 
-        </div >
     );
 }
+
 
 export default App;

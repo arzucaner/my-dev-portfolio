@@ -9,7 +9,6 @@ const SocialMedia = () => {
     twitter: "https://twitter.com/arzuguneycaner",
     youtube: "https://www.youtube.com/channel/UCsK0v6RouRYb5I1Ny8flrOg",
   };
-  if (platform === null) {
 
   return (
     <div>
@@ -30,7 +29,6 @@ const SocialMedia = () => {
     </div>
   );
 };
-}
 
 export default SocialMedia;
 
