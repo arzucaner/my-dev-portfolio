@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import NavbarToggle from "../components/NavbarToggle";
 
 export const Theme = createTheme({
     palette: {},

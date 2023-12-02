@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import Divider from "@mui/material/Divider";
-import NavbarToogle from "./components/NavbarToogle";
+import NavbarToggle from "./components/NavbarToggle";
 
 function App() {
     return (
@@ -96,12 +96,8 @@ function App() {
                                     "box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1)",
                             }}
                         >
-                            <Box className="BoxItem">Work</Box>
-                            <Box className="BoxItem">Info</Box>
-                            <Box className="BoxItem">Blog</Box>
+                            <NavbarToggle />
                         </Box>
-
-
                         <Box
                             gap={3}
                             sx={{
@@ -178,14 +174,12 @@ function App() {
                                         "radial-gradient(circle at 50% 0, rgba(255, 255, 255, .3), rgba(0, 0, 0, 0))",
                                     width: "687px",
                                     zIndex: "0",
-
                                     top: "0%",
                                     bottom: "0%",
                                     left: "0%",
                                     right: "0%",
                                     height: "488px",
                                     gridRowGap: "56px",
-
                                     border: "1px solid #3d3d3d",
                                     borderRadius: "16px",
                                     flexDirection: "column",
@@ -225,7 +219,6 @@ function App() {
                             <Box>© 2023 All Rights Reserved.</Box>
                         </Box>
 
-
                         <Box
                             gap={4}
                             sx={{
@@ -249,6 +242,7 @@ function App() {
                                 </Box>
                                 <Box>Work</Box>
                                 <Box>Info</Box>
+                                <Box>Blog</Box>
                             </Box>
                             <Box>
                                 <Box
