@@ -4,6 +4,8 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import Divider from "@mui/material/Divider";
 import NavbarToggle from "./components/NavbarToggle";
+import InfoPage from "./pages/InfoPage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
     return (
@@ -64,7 +66,7 @@ function App() {
                                         color: "#F2F2F280",
                                     }}
                                 >
-                                    Frontend Developer
+                                    Software Developer
                                 </Box>
                             </Box>
                         </Box>
@@ -240,9 +242,16 @@ function App() {
                                 >
                                     MAIN
                                 </Box>
-                                <Box>Work</Box>
                                 <Box>Info</Box>
-                                <Box>Blog</Box>
+                                <Box>Project</Box>
+                                <Box>Achievements</Box>
+                                <Box>Blog</Box>                               
+                            </Box>
+                            </Box>
+                            <InfoPage/>
+                            </Box>
+                            <Box>
+                            <ProjectPage/>
                             </Box>
                             <Box>
                                 <Box
