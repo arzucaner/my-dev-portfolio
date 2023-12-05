@@ -6,6 +6,8 @@ import Divider from "@mui/material/Divider";
 import NavbarToggle from "./components/NavbarToggle";
 import InfoPage from "./pages/InfoPage";
 import ProjectPage from "./pages/ProjectPage";
+import AchievementsPage from "./pages/AchievementsPage";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
     return (
@@ -245,39 +247,45 @@ function App() {
                                 <Box>Info</Box>
                                 <Box>Project</Box>
                                 <Box>Achievements</Box>
-                                <Box>Blog</Box>                               
+                                <Box>Blog</Box>
                             </Box>
-                            </Box>
-                            <InfoPage/>
-                            </Box>
-                            <Box>
-                            <ProjectPage/>
-                            </Box>
-                            <Box>
-                                <Box
-                                    sx={{
-                                        color: "#F2F2F2",
-                                        opacity: 0.5,
-                                        letterSpacing: "1.5px",
-                                        fontSize: "9px",
-                                        fontWeight: 500,
-                                        lineHeight: "13px",
-                                        mb: 2,
-                                    }}
-                                >
-                                    CONTACT
-                                </Box>
-                                <Box gap={2}>
-                                    <Box>LinkedIn</Box>
-                                    <Box>Twitter</Box>
-                                    <Box>YouTube</Box>
-                                </Box>
-                            </Box>
+                        </Box>
+                        <InfoPage />
+                    </Box>
+                    <Box>
+                        <ProjectPage />
+                    </Box>
+                    <Box>
+                        <AchievementsPage />
+                    </Box>
+                    <Box>
+                        <BlogPage />
+                    </Box>
+                    <Box>
+                        <Box
+                            sx={{
+                                color: "#F2F2F2",
+                                opacity: 0.5,
+                                letterSpacing: "1.5px",
+                                fontSize: "9px",
+                                fontWeight: 500,
+                                lineHeight: "13px",
+                                mb: 2,
+                            }}
+                        >
+                            CONTACT
+                        </Box>
+                        <Box gap={2}>
+                            <Box>LinkedIn</Box>
+                            <Box>Twitter</Box>
+                            <Box>YouTube</Box>
                         </Box>
                     </Box>
                 </Box>
             </Box>
-        </div>
+        </Box>
+            </Box >
+        </div >
 
     );
 }
