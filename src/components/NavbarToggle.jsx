@@ -3,12 +3,21 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { ThemeProvider } from "@mui/material/styles";
 import { Theme } from "../theme/Theme";
+import { useHistory } from "react-router-dom";
 
 const NavbarToggle = () => {
     const [alignment, setAlignment] = React.useState("work");
 
     const handleChange = (event, newAlignment) => {
         setAlignment(newAlignment);
+    };
+    const history = useHistory();
+
+    const NavigateInfoPage = () => {
+        history.push("/InfoPage");
+    };
+    const NavigateHomePage = () => {
+        history.push("/HomePage");
     };
 
     return (
