@@ -47,8 +47,10 @@ export default function Footer() {
                     >
                         MAIN
                     </Box>
-                    <Box>Work</Box>
                     <Box>Info</Box>
+                    <Box>Projects</Box>
+                    <Box>Achievements</Box>
+                    <Box>Blog</Box>
                 </Box>
                 <Box>
                     <Box

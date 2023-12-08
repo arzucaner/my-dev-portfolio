@@ -16,17 +16,19 @@ const NavbarToggle = () => {
     const NavigateInfoPage = () => {
         history.push("/InfoPage");
     };
-    const NavigateHomePage = () => {
-        history.push("/HomePage");
-    };
-
-    const NavigateProjectPage = () => {
-        history.push("/ProjectPage");
+    
+    const NavigateProjectsPage = () => {
+        history.push("ProjectsPage");
     };
 
     const NavigateAchievementsPage = () => {
-        history.push("/AchievementsPage");
+        history.push("AchievementsPage");
     };
+
+    const NavigateBlogPage = () => {
+        history.push("BlogPage");
+    };
+
     return (
         <ThemeProvider theme={Theme}>
             <ToggleButtonGroup
@@ -45,9 +47,9 @@ const NavbarToggle = () => {
                     Info
                 </ToggleButton>
                 <ToggleButton
-                    value="Project"
+                    value="Projects"
                     aria-label="left aligned"
-                    onClick={NavigateHomePage}
+                    onClick={NavigateProjectsPage}
                     className="hover-effect special-button"
                 >
                     Projects
@@ -63,7 +65,7 @@ const NavbarToggle = () => {
                 <ToggleButton
                     value="blog"
                     aria-label="right aligned"
-                    onClick={NavigateProjectPage}
+                    onClick={NavigateBlogPage}
                     className="hover-effect special-button"
                 >
                     Blog
