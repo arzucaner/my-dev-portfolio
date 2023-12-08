@@ -20,6 +20,13 @@ const NavbarToggle = () => {
         history.push("/HomePage");
     };
 
+    const NavigateProjectPage = () => {
+        history.push("/ProjectPage");
+    };
+
+    const NavigateAchievementsPage = () => {
+        history.push("/AchievementsPage");
+    };
     return (
         <ThemeProvider theme={Theme}>
             <ToggleButtonGroup
@@ -27,14 +34,38 @@ const NavbarToggle = () => {
                 exclusive
                 onChange={handleChange}
                 aria-label="Platform"
+                style={{ display: 'flex', gap: '10px' }}
             >
-                <ToggleButton value="work" aria-label="left aligned">
-                    Work
-                </ToggleButton>
-                <ToggleButton value="info" aria-label="centered">
+                <ToggleButton
+                    value="info"
+                    aria-label="centered"
+                    onClick={NavigateInfoPage}
+                    className="hover-effect"
+                >
                     Info
                 </ToggleButton>
-                <ToggleButton value="blog" aria-label="right aligned">
+                <ToggleButton
+                    value="Project"
+                    aria-label="left aligned"
+                    onClick={NavigateHomePage}
+                    className="hover-effect special-button"
+                >
+                    Projects
+                </ToggleButton>
+                <ToggleButton
+                    value="achievements"
+                    aria-label="left aligned"
+                    onClick={NavigateAchievementsPage}
+                    className="hover-effect special-button"
+                >
+                    Achievements
+                </ToggleButton>
+                <ToggleButton
+                    value="blog"
+                    aria-label="right aligned"
+                    onClick={NavigateProjectPage}
+                    className="hover-effect special-button"
+                >
                     Blog
                 </ToggleButton>
             </ToggleButtonGroup>

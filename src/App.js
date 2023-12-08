@@ -5,7 +5,7 @@ import ProjectPage from "./pages/ProjectPage";
 import AchievementsPage from "./pages/AchievementsPage";
 import BlogPage from "./pages/BlogPage";
 import HomePage from "./pages/HomePage";
-import InfoPage from "./pages/InfoPage";
+
 
 function App() {
     return (

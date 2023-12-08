@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import EggIcon from "@mui/icons-material/Egg";
+import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import Link from "@mui/material/Link";
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
                 }}
             >
                 <Box>
-                    <EggIcon sx={{ fontSize: 70 }} />
+                    <FingerprintIcon sx={{ fontSize: 70 }} />
                 </Box>
                 <Box>© 2023 All Rights Reserved.</Box>
             </Box>

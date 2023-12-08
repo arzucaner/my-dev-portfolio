@@ -50,3 +50,22 @@ a:hover {
 .App-link {
     color: #61dafb;
 }
+
+.hover-effect:hover {
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.special-button:hover {
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.ToggleButton {
+    flex: 1; 
+    width: 100%; 
+}
