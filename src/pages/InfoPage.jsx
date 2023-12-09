@@ -1,69 +1,51 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-
-
-
+import image from '../assets/image.png';
 
 const InfoPage = () => {
-    const profileImageURL = 'https://media.licdn.com/dms/image/C5603AQHdV2DftaLXsQ/profile-displayphoto-shrink_400_400/0/1560533242809?e=1707350400&v=beta&t=_vAujYBmLP-W3elVs1lmsnuAqqmNE32_7uwzR5wu-AQ';
+    const profileImageURL = image;
 
     const containerStyle = {
-        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        alignItems: 'center',
+        justifyContent: 'center',
         padding: '20px',
         fontFamily: 'Quantico, sans-serif',
     };
 
-    const profileImageStyle = {
-        width: '150px',
-        borderRadius: '50%',
-        marginBottom: '20px',
+    const imageContainerStyle = {
+        marginRight: '100px',
+        alignSelf: 'flex-start',
     };
 
-    const contactFormStyle = {
+    const profileImageStyle = {
+        width: '400px',
+        boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
+    };
+
+    const textContainerStyle = {
+        textAlign: 'left',
         maxWidth: '400px',
-        margin: '0 auto',
-    };   
+        marginTop: '150px',
+    };
 
     return (
         <div style={containerStyle}>
-            <a href="https://media.licdn.com/dms/image/C5603AQHdV2DftaLXsQ/profile-displayphoto-shrink_400_400/0/1560533242809?e=1707350400&v=beta&t=_vAujYBmLP-W3elVs1lmsnuAqqmNE32_7uwzR5wu-AQ" target="_blank" rel="noopener noreferrer">
-                <img src={profileImageURL} alt="Arzu Caner" style={{ width: '150px', borderRadius: '50%' }} />
-            </a>
+            <img src={profileImageURL} alt="Arzu Caner" style={profileImageStyle} />
 
-            <h1>Arzu Caner</h1>
-            <p>Software Developer</p>
-            <p>Technical SEO background</p>
-            <p>Tech Stack</p>
-            <p>Frontend: HTML, CSS, JavaScript, TypeScript, React.js, Vue.js</p>
+            <div style={textContainerStyle}>
+                <h1 style={{ color: '#333', fontSize: '2rem' }} >Arzu Caner</h1>
+                <p>Software Developer</p>
+                <p>Technical SEO background</p>
+                <p>Tech Stack</p>
+                <p>Frontend: HTML, CSS, JavaScript, TypeScript, React.js, Vue.js</p>
                 <p>Backend: Node.js, Testing with Jest 🃏
-                Database: MongoDB 🍃</p>
-
-            <div style={contactFormStyle}>
-                <Box>
-                    <TextField
-                        label="Your Name"
-                        variant="outlined"
-                        fullWidth
-                        margin="normal"
-                    />
-                    <TextField
-                        label="Your Email"
-                        variant="outlined"
-                        fullWidth
-                        margin="normal"
-                    />
-                    <TextField
-                        label="Your Message"
-                        multiline
-                        rows={4}
-                        variant="outlined"
-                        fullWidth
-                        margin="normal"
-                    />
-                </Box>
+                    Database: MongoDB 🍃</p>
             </div>
         </div>
+
     );
 };
 
