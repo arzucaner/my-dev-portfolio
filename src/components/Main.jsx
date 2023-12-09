@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 
-export default function Main() {
+const Main = () => {
   return (
     <Box
       gap={5}
@@ -57,11 +57,39 @@ export default function Main() {
             transition: "border .4s cubic-bezier(.165, .84, .44, 1)",
             position: "relative",
             overflow: "hidden",
+            fontFamily: 'Quantico, sans-serif',
+            fontSize: '30px',
           }}
         >
-          test
+          <div style={{ display: 'inline-block', overflow: 'hidden' }}>
+            <p
+              style={{
+                whiteSpace: 'nowrap',
+                margin: 0,
+                overflow: 'hidden',
+                animation: 'typewriter 2s steps(60, end) 1s forwards',
+              }}
+            >
+              I add colour to my creativity;
+            </p>
+          </div>
+          <div style={{ display: 'inline-block', overflow: 'hidden' }}>
+            <p
+              style={{
+                whiteSpace: 'nowrap',
+                margin: 0,
+                overflow: 'hidden',
+                animation: 'typewriter 2s steps(60, end) 1s forwards',
+              }}
+            >
+              I turn my dreams into reality with code!
+            </p>
+          </div>
         </Box>
       </Box>
     </Box>
+
   );
-}
+};
+
+export default Main;

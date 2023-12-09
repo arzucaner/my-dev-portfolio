@@ -1,8 +1,13 @@
 import React from 'react';
 
 const ProjectPage = () => {
+  const containerStyle = {
+    textAlign: 'center',
+    fontFamily: 'Quantico, sans-serif',
+  };
+
   return (
-    <div>
+    <div style={containerStyle}>
       <h2>React TriviaQuest Challenge</h2>
       <img src="https://github.com/arzucaner/react-triviaquest-challenge/blob/main/image/README/1699429057578.png" alt="project picture" />
       <p>

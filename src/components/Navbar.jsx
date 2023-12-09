@@ -36,6 +36,7 @@ export default function Navbar() {
                         alignItems: "flex-start",
                         display: "flex",
                         flexDirection: "column",
+                        fontFamily: 'Quantico, sans-serif',
                     }}
                 >
                     <Box
@@ -86,6 +87,7 @@ export default function Navbar() {
                     height: "48px",
                     transition:
                         "box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1)",
+                      
                 }}
             >
                 <NavbarToggle />

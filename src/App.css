@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap');
 
 :root {
     background-color: #101010;
@@ -11,8 +11,8 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Eczar', sans-serif;
-    font-size: 14px;
+    font-family: 'Quantico', sans-serif;
+    font-size: 14px;    
 }
 
 @media (prefers-reduced-motion: no-preference) {}
@@ -45,6 +45,7 @@ a:hover {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    font-family: 'Quantico', sans-serif;
 }
 
 .App-link {
@@ -69,3 +70,12 @@ a:hover {
     flex: 1; 
     width: 100%; 
 }
+
+@keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
