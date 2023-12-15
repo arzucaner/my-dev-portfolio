@@ -4,6 +4,7 @@ const ProjectPage = () => {
   const containerStyle = {
     textAlign: 'center',
     fontFamily: 'Quantico, sans-serif',
+    padding:'20px',
   };
 
   return (
