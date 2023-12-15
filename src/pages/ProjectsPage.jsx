@@ -7,6 +7,12 @@ const ProjectPage = () => {
     padding:'20px',
   };
 
+  const imageStyle = {
+    maxWidth: '100%',
+    height: 'auto',
+    marginTop: '20px',
+  };
+
   return (
     <div style={containerStyle}>
       <h2>React TriviaQuest Challenge</h2>
