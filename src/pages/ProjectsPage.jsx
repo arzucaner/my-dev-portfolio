@@ -1,4 +1,5 @@
 import React from 'react';
+import projectImage from '../assets/project-1.png';
 
 const ProjectPage = () => {
   const containerStyle = {
@@ -8,7 +9,7 @@ const ProjectPage = () => {
   };
 
   const imageStyle = {
-    maxWidth: '100%',
+    maxWidth: '20%',
     height: 'auto',
     marginTop: '20px',
   };
@@ -16,7 +17,7 @@ const ProjectPage = () => {
   return (
     <div style={containerStyle}>
       <h2>React TriviaQuest Challenge</h2>
-      <img src="https://github.com/arzucaner/react-triviaquest-challenge/blob/main/image/README/1699429057578.png" alt="project picture" />
+      <img src={projectImage} alt="project" style={imageStyle} />
       <p>
         React TriviaQuest Challenge is an interactive trivia quiz application developed using React. This project provides users with a fun experience to test their general knowledge and information.
       </p>
