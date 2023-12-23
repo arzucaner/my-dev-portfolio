@@ -16,18 +16,21 @@ const NavbarToggle = () => {
     const NavigateInfoPage = () => {
         history.push("/InfoPage");
     };
-    
-    const NavigateProjectsPage = () => {
-        history.push("ProjectsPage");
+    const NavigateHomePage = () => {
+        history.push("/HomePage");
     };
 
-    const NavigateAchievementsPage = () => {
-        history.push("AchievementsPage");
-    };
+    //const NavigateProjectsPage = () => {
+    // history.push("ProjectsPage");
+    //};
 
-    const NavigateBlogPage = () => {
-        history.push("BlogPage");
-    };
+    //const NavigateAchievementsPage = () => {
+    //history.push("AchievementsPage");
+    //};
+
+    // const NavigateBlogPage = () => {
+    //history.push("BlogPage");
+    //};
 
     return (
         <ThemeProvider theme={Theme}>
@@ -36,43 +39,63 @@ const NavbarToggle = () => {
                 exclusive
                 onChange={handleChange}
                 aria-label="Platform"
-                style={{ display: 'flex', gap: '10px' }}
+            //style={{ display: 'flex', gap: '10px' }}
             >
+                <ToggleButton
+                    value="work"
+                    aria-label="left aligned"
+                    onClick={NavigateHomePage}
+                >
+                    Work
+                </ToggleButton>
                 <ToggleButton
                     value="info"
                     aria-label="centered"
                     onClick={NavigateInfoPage}
-                    className="hover-effect"
                 >
                     Info
-                </ToggleButton>
-                <ToggleButton
-                    value="Projects"
-                    aria-label="left aligned"
-                    onClick={NavigateProjectsPage}
-                    className="hover-effect special-button"
-                >
-                    Projects
-                </ToggleButton>
-                <ToggleButton
-                    value="achievements"
-                    aria-label="left aligned"
-                    onClick={NavigateAchievementsPage}
-                    className="hover-effect special-button"
-                >
-                    Achievements
-                </ToggleButton>
-                <ToggleButton
-                    value="blog"
-                    aria-label="right aligned"
-                    onClick={NavigateBlogPage}
-                    className="hover-effect special-button"
-                >
-                    Blog
                 </ToggleButton>
             </ToggleButtonGroup>
         </ThemeProvider>
     );
 };
+
+//Info
+//</ToggleButton>
+//<ToggleButton
+//value="Projects"
+//aria-label="left aligned"
+//onClick={NavigateProjectsPage}
+//className="hover-effect special-button"
+// >
+//</ToggleButton>
+//<ToggleButton
+// value="info"
+//aria-label="centered"
+// onClick={NavigateInfoPage}
+//className="hover-effect"
+//>
+//Projects
+//</ToggleButton>
+//<ToggleButton
+//value="achievements"
+//aria-label="left aligned"
+//onClick={NavigateAchievementsPage}
+//className="hover-effect special-button"
+//>
+//Achievements
+//</ToggleButton>
+//<ToggleButton
+//value="blog"
+//aria-label="right aligned"
+//onClick={NavigateBlogPage}
+//className="hover-effect special-button"
+//>
+//Blog
+//</ToggleButton>
+//</ToggleButtonGroup>
+//</ThemeProvider>
+//);
+//};
 
 export default NavbarToggle;

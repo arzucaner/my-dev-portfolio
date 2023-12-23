@@ -58,10 +58,10 @@ const Main = () => {
             position: "relative",
             overflow: "hidden",
             fontFamily: 'Quantico, sans-serif',
-            fontSize: '30px',
+            //fontSize: '30px',
           }}
         >
-          <div style={{ display: 'inline-block', overflow: 'hidden' }}>
+          //<div style={{ display: 'inline-block', overflow: 'hidden' }}>
             <p
               style={{
                 whiteSpace: 'nowrap',

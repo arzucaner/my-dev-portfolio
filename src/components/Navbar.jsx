@@ -4,10 +4,10 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import NavbarToggle from "../components/NavbarToggle";
 import Link from "@mui/material/Link";
-import ProjectPage from "../pages/ProjectsPage";
-import AchievementsPage from "../pages/AchievementsPage";
-import BlogPage from "../pages/BlogPage";
-import InfoPage from "../pages/InfoPage";
+//import ProjectPage from "../pages/ProjectsPage";
+//import AchievementsPage from "../pages/AchievementsPage";
+//import BlogPage from "../pages/BlogPage";
+//import InfoPage from "../pages/InfoPage";
 
 
 export default function Navbar() {
@@ -83,7 +83,8 @@ export default function Navbar() {
                     borderShadow: "0 10px 25px rgba(0, 0, 0, .15)",
                     pl: "6px",
                     pr: "6px",
-                    width: "400px",
+                    //width: "400px",
+                    width: "180px",
                     height: "48px",
                     transition:
                         "box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1)",

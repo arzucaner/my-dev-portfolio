@@ -1,10 +1,10 @@
 import "./App.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import NavbarToggle from "./components/NavbarToggle";
+//import NavbarToggle from "./components/NavbarToggle";
 import InfoPage from "./pages/InfoPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import AchievementsPage from "./pages/AchievementsPage";
-import BlogPage from "./pages/BlogPage";
+//import ProjectsPage from "./pages/ProjectsPage";
+//import AchievementsPage from "./pages/AchievementsPage";
+//import BlogPage from "./pages/BlogPage";
 import HomePage from "./pages/HomePage";
 
 
@@ -20,17 +20,17 @@ function App() {
                     <InfoPage />
                 </Route>
 
-                <Route key="ProjectsPage" exact path={["/", "/ProjectsPage"]}>
+                //<Route key="ProjectsPage" exact path={["/", "/ProjectsPage"]}>
                     <ProjectsPage />
-                </Route>
+                //</Route>
 
-                <Route key="AchievementsPage" exact path={["/", "/AchievementsPage"]}>
+               //<Route key="AchievementsPage" exact path={["/", "/AchievementsPage"]}>
                     <AchievementsPage />
-                </Route>
+                //</Route>
 
-                <Route key="BlogPage" exact path={["/", "/BlogPage"]}>
+               //<Route key="BlogPage" exact path={["/", "/BlogPage"]}>
                     <BlogPage />
-                </Route>
+                //</Route>
 
                 {/*         <Route path="*">
                       <Error404 />
