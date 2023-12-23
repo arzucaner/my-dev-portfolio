@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
-import NavbarToggle from "../components/NavbarToggle";
+//import NavbarToggle from "../components/NavbarToggle";
 
-export const theme = createTheme({
+export const Theme = createTheme({
     palette: {},
     components: {
         MuiToggleButton: {

@@ -2,7 +2,7 @@ import React from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { ThemeProvider } from "@mui/material/styles";
-import { Theme } from "../theme/Theme";
+import { Theme } from "../Theme/theme";
 import { useHistory } from "react-router-dom";
 
 const NavbarToggle = () => {

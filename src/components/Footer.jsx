@@ -48,10 +48,7 @@ export default function Footer() {
                         MAIN
                     </Box>
                     <Box>Info</Box>
-                    <Blog>Work</Blog>
-                    //<Box>Projects</Box>
-                    //<Box>Achievements</Box>
-                    //<Box>Blog</Box>
+                    <Box>Work</Box>
                 </Box>
                 <Box>
                     <Box
@@ -104,3 +101,7 @@ export default function Footer() {
         </Box>
     );
 }
+
+//<Box>Projects</Box>
+//<Box>Achievements</Box>
+//<Box>Blog</Box>

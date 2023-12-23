@@ -19,19 +19,6 @@ function App() {
                 <Route key="InfoPage" exact path={["/", "/InfoPage"]}>
                     <InfoPage />
                 </Route>
-
-                //<Route key="ProjectsPage" exact path={["/", "/ProjectsPage"]}>
-                    <ProjectsPage />
-                //</Route>
-
-               //<Route key="AchievementsPage" exact path={["/", "/AchievementsPage"]}>
-                    <AchievementsPage />
-                //</Route>
-
-               //<Route key="BlogPage" exact path={["/", "/BlogPage"]}>
-                    <BlogPage />
-                //</Route>
-
                 {/*         <Route path="*">
                       <Error404 />
                   </Route>
@@ -41,4 +28,16 @@ function App() {
     );
 }
 
-export default App; 
+export default App;
+
+///<Route key="ProjectsPage" exact path={["/", "/ProjectsPage"]}>
+//<ProjectsPage />
+//</Route>
+
+//<Route key="AchievementsPage" exact path={["/", "/AchievementsPage"]}>
+//<AchievementsPage />
+//</Route>
+
+//<Route key="BlogPage" exact path={["/", "/BlogPage"]}>
+//<BlogPage />
+//</Route>
