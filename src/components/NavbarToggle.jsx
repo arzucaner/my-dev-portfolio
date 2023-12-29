@@ -20,17 +20,7 @@ const NavbarToggle = () => {
         history.push("/HomePage");
     };
 
-    //const NavigateProjectsPage = () => {
-    // history.push("ProjectsPage");
-    //};
-
-    //const NavigateAchievementsPage = () => {
-    //history.push("AchievementsPage");
-    //};
-
-    // const NavigateBlogPage = () => {
-    //history.push("BlogPage");
-    //};
+    
 
     return (
         <ThemeProvider theme={Theme}>
@@ -59,6 +49,8 @@ const NavbarToggle = () => {
         </ThemeProvider>
     );
 };
+
+export default NavbarToggle;
 
 //Info
 //</ToggleButton>
@@ -97,5 +89,15 @@ const NavbarToggle = () => {
 //</ThemeProvider>
 //);
 //};
+//const NavigateProjectsPage = () => {
+    // history.push("ProjectsPage");
+    //};
 
-export default NavbarToggle;
+    //const NavigateAchievementsPage = () => {
+    //history.push("AchievementsPage");
+    //};
+
+    // const NavigateBlogPage = () => {
+    //history.push("BlogPage");
+    //};
+

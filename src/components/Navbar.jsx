@@ -4,10 +4,7 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import NavbarToggle from "../components/NavbarToggle";
 import Link from "@mui/material/Link";
-//import ProjectPage from "../pages/ProjectsPage";
-//import AchievementsPage from "../pages/AchievementsPage";
-//import BlogPage from "../pages/BlogPage";
-//import InfoPage from "../pages/InfoPage";
+
 
 
 export default function Navbar() {
